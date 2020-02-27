@@ -1,0 +1,10 @@
+#
+# Automatically generated file; DO NOT EDIT.
+#
+
+menu "External options"
+
+comment "Minimal audio player (in /home/jef/target)"
+source "/home/jef/target/Config.in"
+
+endmenu
