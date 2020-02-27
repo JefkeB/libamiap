@@ -1,0 +1,4 @@
+config Map_AAP
+	hex "de aaap"
+	default 0xABBABABE
+
