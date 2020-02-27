@@ -1,1 +1,3 @@
 target/build
+target/.br2-external.*
+target/Makefile
