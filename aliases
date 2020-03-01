@@ -1,0 +1,4 @@
+alias d_run="~/Work/buildroot/libamiap/docker/1.run.sh"
+alias d_shell="~/Work/buildroot/libamiap/docker/2.start_shell.sh"
+alias d_stop="~/Work/buildroot/libamiap/docker/3.stop.sh"
+alias d_exe="~/Work/buildroot/libamiap/docker/exec.sh"
