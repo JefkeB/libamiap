@@ -2,3 +2,11 @@ target/build
 target/.br2-external.*
 target/Makefile
 target/compiler/x86_64-linux-musl-cross
+target/host
+target/buildroot-ccache
+target/images
+target/target
+target/..config.tmp
+target/.config.old
+target/staging
+
