@@ -1,0 +1,6 @@
+# script runs t power donw  of the system
+# stop an playing mpd server
+#
+#
+#!/bin/sh
+mpc stop

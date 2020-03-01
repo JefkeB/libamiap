@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+# script runs at boot
+# stop playing mpd
+# sets volume to a safe low level
+# restore the alsa settings for the sound card
+#
+
+
+echo "MPD/MPC initialisation"
+echo "wait for MPD available"
+#until pids=$(pidof mpd)
+#do 
+#	sleep 1
+#	echo "."
+#done
+
+#echo $(pidof mpd)
+
+# wait until MPD available by checking exit status of mpc
+cnt=0
+while true; do
+	mpc stop
+	# command executed
+	if [ $? -eq 0 ]
+	then
+		mpc volume 10
+		break	
+	fi
+
+	# just try it a limit number of times
+	cnt=$((cnt+1))
+	if [ $cnt -eq 5 ]
+	then
+		echo "mpd is not available !!"
+		break
+	fi
+
+	# wait a moment
+	sleep 1
+done
+
+

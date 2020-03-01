@@ -1,0 +1,12 @@
+# script runs at boot
+# stop playing mpd
+# sets volume to a safe low level
+# restore the alsa settings for the sound card
+#
+
+#!/bin/sh
+echo "Audio initialisation"
+#mpc stop
+#mpc volume 10
+alsactl restore
+
