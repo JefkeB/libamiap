@@ -2,6 +2,7 @@ target/build
 target/.br2-external.*
 target/Makefile
 target/compiler/x86_64-linux-musl-cross
+target/compiler/x86-64-core-i7--glibc--stable-2020.08-1
 target/host
 target/buildroot-ccache
 target/images
